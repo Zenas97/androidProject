@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "593284295780",
+    "firebase_url": "https://android-exam-project-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "android-exam-project",
+    "storage_bucket": "android-exam-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593284295780:android:228fc626ab5390a1468371",
+        "android_client_info": {
+          "package_name": "com.example.androidproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593284295780-6p99onpfmqscff88kae454prqsq3mt47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZONNv0Yk4gqQeTSSI6g0-Ie9VXQ1ego"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593284295780-6p99onpfmqscff88kae454prqsq3mt47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

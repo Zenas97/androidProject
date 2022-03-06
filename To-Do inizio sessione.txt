@@ -1,0 +1,1 @@
+- Continuare Location Service con l'integrazione delle view

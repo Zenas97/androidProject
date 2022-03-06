@@ -1,0 +1,41 @@
+version: "1.0"
+services:
+    db:
+        build:
+            context: ./Database
+        container_name: database
+        hostname: dbHost
+        user: root
+        ports:
+            - 3310:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: qwerty
+            MYSQL_USER: admin
+            MYSQL_PASSWORD: admin
+            MYSQL_DATABASE: android-project
+        volumes:
+            - type: volume
+              source: db-volume
+              target: /var/lib/mysql
+    phpmyadmin:
+        image: phpmyadmin:latest
+        container_name: phpmyadmin-container
+        hostname: phpadminHost
+        user: root
+        depends_on: 
+            - db
+        environment: 
+            - PMA_ARBITRARY=1
+            - PMA_HOST=dbHost
+            - PMA_USER=admin
+            - PMA_PASSWORD=admin
+        ports:
+            - 8082:80
+          
+      
+volumes:
+    db-volume:
+        name: database-progetto-android
+networks:
+    default:
+        name: my-app-network

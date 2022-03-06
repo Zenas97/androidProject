@@ -1,0 +1,15 @@
+Purtroppo l'api di google per le location è buggata è supporta solo un modello asincrono, in pratica
+è impossibile aspettare che una richiesta venga risolta, infatti se si aspetta bloccando il main Thread
+in pratica muore, ci penso un po su per vedere se riesco a migliorare questa cosa.
+
+
+Per le prossime volta ora dovrò fare il meccanismo delle shared preference con la mock mode e mock location,
+preparare alcune location in modo tale che ci siano conflitti e non e poi preparare la Dialog che risolve i conflitti.
+
+
+Una volta fatto tutto ciò dovrò testare la funzionalità vedendo anche cosa succede in caso vado in un altra activity prima
+della selezione per localizzazione. In generale dovrei prevedere che se un activity riceve eventi quando non è in foreground
+li dovrebbe ignorare, così la la selezione avviene solo quando serve.
+
+
+Apparte questo credo che ci sono un paio di cose da correggere e rivedere, un po come tutto il progetto
