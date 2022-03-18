@@ -1,9 +1,4 @@
-package com.example.androidproject.activities.valutazionistudente;
-
-import androidx.room.Embedded;
-
-import com.example.androidproject.LocalPersistenceModel.entities.Indicatore;
-import com.example.androidproject.LocalPersistenceModel.entities.ValoreIndicatore;
+package com.example.androidproject;
 
 import java.util.ArrayList;
 import java.util.List;

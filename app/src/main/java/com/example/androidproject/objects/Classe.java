@@ -1,4 +1,4 @@
-package com.example.androidproject.LocalPersistenceModel.entities;
+package com.example.androidproject;
 
 
 import androidx.room.ColumnInfo;
@@ -20,6 +20,15 @@ public class Classe implements Serializable {
     public double longitudine;
     public double latitudine;
 
+    @Override
+    public String toString() {
+        return "Classe{" +
+                "id=" + id +
+                ", nomeClasse='" + nomeClasse + '\'' +
+                ", longitudine=" + longitudine +
+                ", latitudine=" + latitudine +
+                '}';
+    }
 
     public long getId() {
         return id;

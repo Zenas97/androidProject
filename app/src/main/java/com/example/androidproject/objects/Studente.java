@@ -1,4 +1,4 @@
-package com.example.androidproject.LocalPersistenceModel.entities;
+package com.example.androidproject;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
